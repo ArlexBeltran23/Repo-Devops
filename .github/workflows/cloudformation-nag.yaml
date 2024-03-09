@@ -13,4 +13,4 @@ jobs:
                 brew gem install cfn-nag
             - run: |
                 eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-                cfn_nag_scan --input-path 
+                cfn_nag_scan --input-path templates/*
