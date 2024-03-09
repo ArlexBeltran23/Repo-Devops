@@ -3,7 +3,7 @@ Resources:
   MyEC2Instance:
     Type: 'AWS::EC2::Instance'
     Properties:
-      ImageId: 'ami-xxxxxxxxxxxxxxxx'  # Aquí debes reemplazar 'ami-xxxxxxxxxxxxxxxx' con el ID de la imagen de Amazon Linux 2
+      ImageId: 'ami-0f403e3180720dd7e'  
       InstanceType: 't2.micro'  # Tipo de instancia EC2
       SecurityGroups:
         - Ref: WebAccessSecurityGroup
@@ -36,4 +36,4 @@ Resources:
         - IpProtocol: 'tcp'
           FromPort: 22
           ToPort: 22
-          CidrIp: 'your_ip_address/32'  # Reemplaza 'your_ip_address' con tu dirección IP pública
+          CidrIp: '186.84.90.70/32'  # Reemplaza 'your_ip_address' con tu dirección IP pública
