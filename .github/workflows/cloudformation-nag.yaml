@@ -7,4 +7,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
-            - run: echo "Hola loca"
+            - run: eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+            - run: brew install ruby brew-gem
+            - run: brew gem install cfn-nag
