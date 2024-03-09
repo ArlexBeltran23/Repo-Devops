@@ -1,0 +1,10 @@
+name: Cloudformation-nag
+
+on: [push]
+
+jobs: 
+    cloudformation-nag: 
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - run: echo "Hola loca"
